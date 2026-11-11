@@ -1,0 +1,87 @@
+title: "Knut Zoch"
+title_separator: " | "
+masthead_title: "Knut Zoch, PhD"
+subtitle: "Particle Physics & Machine Learning"
+copyright: "Knut Zoch"
+
+description: "Knut Zoch is a particle physicist at CERN, working on the ATLAS experiment and advancing machine learning for science."
+keywords: "particle physics, CERN, ATLAS, top quark, machine learning, experimental physics, Harvard University, neutrino reconstruction, anomaly detection"
+
+og_image: "assets/images/avatar.jpg"
+
+url: "https://knutzoch.org"
+repository: "knutzk/personal-site"
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+minimal_mistakes_skin: "contrast"
+
+locale: "en-US"
+timezone: "Europe/Zurich"
+
+author:
+  name: "Knut Zoch, PhD"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Experimental particle physicist at CERN, combining ATLAS research with machine learning."
+  location: "Geneva, Switzerland"
+  links:
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=MJ0Q724AAAAJ&hl=en"
+    - label: "InspireHEP"
+      icon: "fas fa-fw fa-book"
+      url: "https://inspirehep.net/authors/1508982"
+    - label: "ORCID ID"
+      icon: "fas fa-fw fa-id-card"
+      url: "https://orcid.org/0000-0003-2138-6187"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/knutzk"
+
+analytics:
+  google-gtag:
+    tracking_id: "G-0LBWK2Q9K6"
+    anonymize_ip: false
+
+collections:
+  publications:
+    output: false
+    sort_by: date
+  posts:
+    output: true
+    permalink: /research/:title/
+    sort_by: date
+
+include:
+  - _pages
+
+footer:
+  links:
+    - label: "Privacy Policy"
+      url: "/privacy/"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      read_time: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+breadcrumbs: true
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  style: compressed
